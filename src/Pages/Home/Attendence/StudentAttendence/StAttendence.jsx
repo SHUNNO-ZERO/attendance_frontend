@@ -15,13 +15,13 @@ const StAttendence = ({ selectedDate }) => {
     const { data: presents = [], refetch, isLoading } = useQuery(
         {
             queryKey: ['presents', date],
-            queryFn: () => fetch(` http://localhost:5000/studentList?date=${date}`)
+            queryFn: () => fetch(`https://student-attendance-backend.vercel.app/studentList?date=${date}`)
                 .then(res => res.json())
         }
     )
     // teacher data :
     useEffect(() => {
-        fetch(` http://localhost:5000/teacher?email=${user?.email}`)
+        fetch(`https://student-attendance-backend.vercel.app/teacher?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log('teacher data', data)

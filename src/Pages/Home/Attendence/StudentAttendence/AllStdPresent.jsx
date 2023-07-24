@@ -12,7 +12,7 @@ const AllStdPresent = () => {
     const [teacher, setTeacher] = useState([])
     const date = format(selectedDate, 'PP')
     useEffect(() => {
-        fetch(` http://localhost:5000/attendence?email=${user?.email}&date=${date}`)
+        fetch(`https://student-attendance-backend.vercel.app/attendence?email=${user?.email}&date=${date}`)
             .then(res => res.json())
             .then(data => {
                 setAttendence(data)
@@ -24,7 +24,7 @@ const AllStdPresent = () => {
 
     // teacher data :
     useEffect(() => {
-        fetch(` http://localhost:5000/teacher?email=${user?.email}`)
+        fetch(`https://student-attendance-backend.vercel.app/teacher?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log('teacher data', data)

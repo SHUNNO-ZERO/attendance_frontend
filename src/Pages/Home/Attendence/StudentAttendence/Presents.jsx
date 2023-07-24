@@ -28,7 +28,7 @@ const Presents = ({ option, selectedDate }) => {
         }
         console.log(present)
 
-        fetch(' http://localhost:5000/presents', {
+        fetch('https://student-attendance-backend.vercel.app/presents', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

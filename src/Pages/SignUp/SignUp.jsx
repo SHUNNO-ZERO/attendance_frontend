@@ -38,7 +38,7 @@ const SignUp = () => {
 
     const saveTeacherDb = (name, email, subject) => {
         const teacher = { name, email, subject };
-        fetch(' http://localhost:5000/teachers', {
+        fetch('https://student-attendance-backend.vercel.app/teachers', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

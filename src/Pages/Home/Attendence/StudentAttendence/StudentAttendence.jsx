@@ -15,7 +15,7 @@ const StudentAttendence = ({ selectedDate }) => {
 
 
   useEffect(() => {
-    fetch(" http://localhost:5000/studentList")
+    fetch("https://student-attendance-backend.vercel.app/studentList")
       .then((res) => res.json())
       .then((data) => {
         setStudentAttendence(data)
@@ -28,7 +28,7 @@ const StudentAttendence = ({ selectedDate }) => {
 
   const handleUpdate = (_id) => {
     console.log('dattttttttttttttttt')
-    const url = ` http://localhost:5000/studentList/${_id}`;
+    const url = `https://student-attendance-backend.vercel.app/studentList/${_id}`;
     console.log('Uri', url)
     fetch(url, {
       method: 'PUT',

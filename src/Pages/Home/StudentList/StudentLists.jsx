@@ -8,11 +8,11 @@ const StudentLists = () => {
   // react query
   // const { data: students = [] } = useQuery({
   //     queryKey: ["students"],
-  //     queryFn: () => fetch(' http://localhost:5000/studentList')
+  //     queryFn: () => fetch('https://student-attendance-backend.vercel.app/studentList')
   //         .then(res => res.json())
   // })
   useEffect(() => {
-    fetch(" http://localhost:5000/studentList")
+    fetch("https://student-attendance-backend.vercel.app/studentList")
       .then((res) => res.json())
       .then((data) => setStudents(data));
   }, []);
@@ -22,7 +22,7 @@ const StudentLists = () => {
     console.log("User Row id: ", row._id);
     console.log("row data", row);
     if (agree) {
-      fetch(` http://localhost:5000/studentList/${row._id}`, {
+      fetch(`https://student-attendance-backend.vercel.app/studentList/${row._id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
