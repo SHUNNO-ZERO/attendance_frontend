@@ -32,7 +32,7 @@ const StAttendence = ({ selectedDate }) => {
 
 
     return (
-        <section className='bg-gray-100 py-5 mt-5'>
+        <section className='bg-white-100 py-5 mt-5'>
 
 
             <div className='text-center mt-8 leading-8	'>

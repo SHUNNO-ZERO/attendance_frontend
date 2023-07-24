@@ -56,7 +56,7 @@ const Presents = ({ option, selectedDate }) => {
     return (
         <div>
 
-            <div className="card bg-base-100 shadow-lg ">
+            <div className="card bg-black-100 shadow-lg ">
                 <form className="card-body text-center" onSubmit={handlePresent}>
 
                     <input name='roll' type="number" defaultValue={roll} disabled className="input w-full input-bordered" />
@@ -64,8 +64,8 @@ const Presents = ({ option, selectedDate }) => {
 
                     <select name='slot' class="select select-bordered w-full max-w-xs">
                         <option disabled selected>Select Attendence Option</option>
-                        <option name='present' className='text-blue-600 text-xl'>Present</option>
-                        <option name='absent' className='text-red-600 text-xl'>Absent</option>
+                        <option name='present' className='text-black-600 text-xl'>Present</option>
+                        <option name='absent' className='text-yellow-600 text-xl'>Absent</option>
                     </select>
 
                     <input className=' btn btn-outline w-full' type="submit" value='submit' />

@@ -30,7 +30,7 @@ const Login = () => {
     }
 
     return (
-        <div className='h-[80vh] flex  bg-gradient-to-r from-blue-500'>
+        <div className='h-[80vh] flex  bg-gradient-to-r from-b-500'>
             <div className='w-96 p-7 shadow-xl   '>
                 <h2 className='text-2xl text-center uppercase'>Login</h2>
                 <form onSubmit={handleSubmit(handleLogin)}>

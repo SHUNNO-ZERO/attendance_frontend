@@ -40,8 +40,8 @@ const AllStdPresent = () => {
 
     return (
 
-        <div className="card lg:card-side bg-base-100 shadow-xl max-w-[1440px] mx-auto my-8">
-            <figure className='bg-base-200'>
+        <div className="card lg:card-side bg-base-10 shadow-xl max-w-[1440px] mx-auto my-8">
+            <figure className='bg-base-100'>
 
 
                 <DayPicker

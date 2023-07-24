@@ -52,7 +52,7 @@ const SignUp = () => {
             })
     }
     return (
-        <div className=' py-12 flex justify-center items-center bg-gradient-to-r from-blue-500 '>
+        <div className=' py-12 flex justify-center items-center bg-gradient-to-r from-black-500 '>
             <div className='w-96 p-7 shadow-xl rounded  glass shadow-lg  '>
                 <h2 className='text-2xl text-center uppercase'>Sign up</h2>
                 <form onSubmit={handleSubmit(handleSignUp)} >
